@@ -1,0 +1,382 @@
+/* Body */
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  font-size: 0.93rem;
+  padding: 0px;
+  margin: 0px;
+  background-color: #ffffff;
+}
+/* font for headings */
+h1,
+h2,
+h3 {
+  font-family: "Pacifico", cursive;
+}
+
+/* Purple elements */
+.bg-colored {
+  background-color: rgb(102, 38, 101);
+  color: white;
+}
+/* General Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  width: 80%;
+}
+/* Unordered list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* Header Styling and Nav */
+header {
+  border-bottom: 3px solid pink;
+  padding: 15px 0;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+header li {
+  padding: 0 20px;
+}
+header h1 {
+  margin: 0;
+  font-weight: normal;
+}
+header h1 .highlight,
+header .current a {
+  color: pink;
+}
+header nav {
+  margin-left: auto;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav a:hover {
+  color: pink;
+}
+
+section#showcase {
+  min-height: 400px;
+  background-image: url(../images/bakery-hero-image-1920.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+section#showcase .showcase-inner {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  /*display: flex;
+    flex-direction: row;*/
+}
+section#showcase .container {
+  flex-direction: column;
+}
+section#showcase h2 {
+  font-size: 6em;
+  font-weight: normal;
+  text-shadow: 0px 0px 30px #444;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+section#showcase p {
+  font-size: 1.25rem;
+  line-height: 2;
+  max-width: 85%;
+  margin: 0 auto;
+}
+/* Newsletter Styling */
+section#newsletter {
+  padding: 15px 0;
+}
+section#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+section#newsletter form {
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-1 {
+  height: 38px;
+  background-color: rgb(197, 26, 132);
+  border: none;
+  padding: 0 20px;
+  color: white;
+}
+/* Cakes, Macarons and Doughnust */
+section#boxes {
+  margin-top: 20px;
+}
+section#boxes .box {
+  padding: 10px;
+  text-align: center;
+}
+section#boxes .box img {
+  width: 90px;
+}
+/*Footer Styling */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  background-color: rgb(197, 26, 132);
+}
+
+/* About Us extra Styling */
+section#content .container {
+  align-items: start;
+  text-align: left;
+  margin: 1rem auto;
+}
+aside {
+  padding: 0 1rem 1rem 1rem;
+  margin-left: 0;
+}
+#footer2 {
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  background-color: rgb(197, 26, 132);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+/* Catering styling */
+.catering-item {
+  background-color: #ffe5ec;
+  padding: 1px;
+  margin: 10px 0;
+  border-left: 5px solid #ffe5ec;
+}
+.order-link {
+  color: white;
+}
+/* order */
+.page-title-3 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+#paragraph {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.container2 {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffe5ec;
+  padding: 20px;
+  border: 1px solid #d25576;
+  border-radius: 8px;
+  color: #662a72;
+}
+.names {
+  width: 100%;
+  padding: 12px;
+  margin: 8px;
+  box-sizing: border-box;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.button_2 {
+  background-color: #f76c90;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 4px;
+  width: 100%;
+}
+.text {
+  font-size: 20px;
+  width: auto;
+}
+select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="number"] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+/* Recipes */
+.recipes {
+  background-color: #ffe5ec;
+  padding: 10px;
+  margin: 30px;
+  border-left: 5px solid #ffe5ec;
+}
+
+.image img {
+  max-width: 100%;
+  height: 300px;
+  width: 30%;
+  margin: 0 auto;
+}
+.ulist {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.ulist1 {
+  list-style: none;
+}
+#recipe-page {
+  width: 80%;
+}
+/* Mobile Responivness */
+textarea {
+  max-width: 200px;
+}
+@media (min-width: 768px) {
+  section#showcase h2 {
+    font-size: 6em;
+  }
+
+  textarea {
+    max-width: inherit;
+  }
+  .container {
+    flex-direction: row;
+  }
+  section#newsletter form {
+    margin-right: 0;
+  }
+  aside {
+    margin-left: 3em;
+  }
+  header .container {
+    width: 100%;
+  }
+  header .container #branding {
+    width: 80%;
+  }
+}
+
+nav {
+  text-align: center;
+  line-height: 70px;
+  width: 100%;
+}
+
+header nav ul {
+  display: none;
+}
+
+nav ul a {
+  display: block;
+  border-top: 1px solid #eaeaeb;
+  margin: 0;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked ~ ul {
+  display: block;
+}
+
+header li {
+  padding: 0px;
+}
+
+header nav ul {
+  display: none;
+  list-style: none;
+}
+
+#toggle:checked + ul {
+  display: block;
+}
+
+#toggle {
+  display: none;
+}
+
+nav label {
+  display: block;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  nav label {
+    display: none;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul a {
+    border-top: 0;
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* Add some more padding for links on large tablets/desktop */
+  nav ul a {
+    padding: 0 20px;
+  }
+
+  header .container {
+    width: 80%;
+  }
+}
+.box .fa-birthday-cake {
+  font-size: 5em;
+  color: #f50585;
+}
+.box .fab {
+  font-size: 5em;
+  color: #f50585;
+}
+.box .fas {
+  font-size: 5em;
+  color: #f50585;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tasty Bakery the best bakery in Victoria">
+  <meta name="keywords" content="doughnuts, cakes, croissants, pies, eclair">
+  <meta name="author" content="Rutazigwa Junior">
+  <title>Yummy Baked Goods | TASTY BAKERY | Order</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400&display=swap" >
+</head>
+<body>
+  <header class="bg-colored">
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Tasty</span> Bakery</h1>
+      </div>
+      <nav>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="recipes.html">Recipes</a>
+          </li>
+          <li>
+            <a href="catering.html">Catering</a>
+          </li>
+          <li class="current">
+            <a href="order.html">Order</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="newsletter" class="bg-colored">
+    <div class="container">
+      <h3>Subscribe to our newsletter</h3>
+      <form>
+        <input type="email" name="email_address" placeholder="Enter your email..." required=""> <button type="submit" name="subscribe" class="button-1">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  <section id="content">
+    
+      <main class="order">
+        <h2 class="page-title-3">Order Now</h2>
+        <p id="paragraph">Please fill in the form below. Payment is made at time of delivery or pickup.</p>
+        <div class="container2">
+          <article id="order form">
+            <form id="get-order" action="" method="post" name="get-order">
+              <label for="first-name">First name:</label> <input id="first-name" class="names" type="text" name="first_name" placeholder="First name" required=""><br>
+              <label for="last-name">Last name:</label> <input id="last-name" class="names" type="text" name="last_name" placeholder="Last name" required=""><br>
+              <label for="email-adress">Email Adress:</label> <input id="email-adress" class="names" type="email" name="email_adress" placeholder="Email adress" required=""><br>
+              <label for="phone-number">Phone Number:</label> <input id="phone-number" class="names" type="text" name="phone_number" placeholder="Phone number" required="">
+              <h2>Delivery Details</h2><label for="delivery-method" id="delivery-details">Via:</label> <select id="delivery-method" name="delivery-method">
+                <option value="curbside-pickup">
+                  Curbside Pickup
+                </option>
+                <option value="pickup-in-store">
+                  Pickup in store
+                </option>
+                <option value="deliver-via-courier">
+                  Deliver Via Courier
+                </option>
+              </select>
+              <h2>Order Items</h2><br>
+              <div class="order-items">
+                <input type="checkbox" name="order_items[]" value="macarons" id="macarons"> <label class="text" for="macarons">Macarons(each 1$)</label> <select name="macarons">
+                  <option selected="selected" value="assorted">
+                    assorted
+                  </option>
+                  <option value="chesse">
+                    Cheese
+                  </option>
+                  <option value="meat">
+                    meat
+                  </option>
+                  <option value="sausage">
+                    Sausage
+                  </option>
+                  <option value="beer">
+                    Beer
+                  </option>
+                </select> <input type="number" name="macarons-quantity" min="0" max="10" placeholder="0"><br>
+                <input type="checkbox" name="order_items" value="doughnuts" id="doughnuts"> <label class="text" for="doughnuts">Doughnuts(each 2$)</label> <select name="doughnuts">
+                  <option selected="selected" value="assorted">
+                    assorted
+                  </option>
+                  <option value="vanilla">
+                    Vanilla
+                  </option>
+                  <option value="chocolate">
+                    Chocolate
+                  </option>
+                  <option value="strawberry">
+                    Strawberry
+                  </option>
+                </select> <input type="number" name="doughnuts-quantinty" min="0" max="10" placeholder="0"><br>
+                <input type="checkbox" name="order_items[]" value="Pies" id="pies"> <label class="text" for="pies">Pies(each 3$)</label> <select name="pies">
+                  <option selected="selected" value="assorted">
+                    assorted
+                  </option>
+                  <option value="lemon">
+                    Lemon
+                  </option>
+                  <option value="apple">
+                    Apple
+                  </option>
+                  <option value="Banana">
+                    Banana
+                  </option>
+                </select> <input type="number" name="pies-quantinty" min="0" max="10" placeholder="0"><br>
+                <input type="checkbox" name="croissants" value="yes" id="croissants"> <label class="text" for="croissants">Croissants</label> <select name="croissants">
+                  <option selected="selected" value="assorted">
+                    assorted
+                  </option>
+                  <option value="chocolate">
+                    Chocolate
+                  </option>
+                  <option value="cheese">
+                    Cheese
+                  </option>
+                  <option value="vanilla">
+                    Vanilla
+                  </option>
+                </select> <input type="number" name="croissants-quantinty" min="0" max="10" placeholder="0">
+              </div><br>
+              <h2>Order Instructions</h2>
+              <p class="paragraph"><label>if you have any preference for any of the above ordered items, please specify below:</label></p>
+              <textarea id="order-instructions" name="order-instructions" rows="5" cols="50" placeholder="Enter Comment Here"></textarea>
+              <h2>Payment Type</h2><input type="radio" name="payment_type" value="cash" id="payment_type_cash" checked> <label for="payment_type_cash">Cash</label> <input type="radio" name="payment_type" value="debit" id="payment_type_debit"> <label for="payment_type_debit">Debit</label> <input type="radio" name="payment_type" value="visa_mastercard" id="payment_type_visa_mastercard"> <label for="payment_type_visa_mastercard">Visa/Mastercard</label>
+              <div>
+                <button class="button_2">Place your order now</button>
+              </div>
+            </form>
+          </article>
+        </div>
+      </main>
+    </div>
+  </section>
+  <footer>
+    © 2024 Rutazigwa Junior.
+  </footer>
+</body>
+</html>
